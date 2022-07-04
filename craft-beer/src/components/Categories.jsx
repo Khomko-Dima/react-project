@@ -1,18 +1,18 @@
 import React from 'react';
 
+//вынес вне компоненты т.к. сдесь константы по сути
+const categories = [
+  'Все',
+  'Эли светлые',
+  'Эли темные',
+  'Портер',
+  'Стаут',
+  'Sour Ale'
+];
 
 const Categories = () =>{
   const [activeIndex, setActiveIndex] = React.useState(0);
-
-  const categories = [
-    'Все',
-    'Эли светлые',
-    'Эли темные',
-    'Портер',
-    'Стаут',
-    'Sour Ale'
-  ];
-
+  
   const onClickCategory = (index) => {
     setActiveIndex(index);
   }
